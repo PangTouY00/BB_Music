@@ -52,9 +52,9 @@ dependencies {
     implementation 'org.json:json:20230227'
 
     // ExoPlayer 用于媒体播放
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.7'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.7'
-
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'  // 最新稳定版
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.19.1'  // 最新稳定版
+    
     // JavaCV/FFmpeg 用于音频提取
     implementation 'org.bytedeco:javacv:1.5.8'
     implementation 'org.bytedeco:ffmpeg:5.1.2-1.5.8'
