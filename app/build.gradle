@@ -5,7 +5,7 @@ plugins {
 
 android {
     compileSdkVersion 33
-
+    namespace 'com.example.lyricsplayer'  // 添加这一行，替换为你的应用包名
     defaultConfig {
         applicationId "com.example.lyricsplayer"
         minSdkVersion 21
