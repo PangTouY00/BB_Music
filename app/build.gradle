@@ -1,6 +1,6 @@
 // build.gradle (Module: app)
 plugins {
-    id 'com.android.application'
+    id 'com.android.application'  // 应用 Android 插件
 }
 
 android {
@@ -19,37 +19,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-    }
-
-    // 解决 JavaCV/FFmpeg 的依赖冲突
-    packagingOptions {
-        exclude 'META-INF/native-image/**'
-        exclude 'META-INF/DEPENDENCIES'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/license.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/notice.txt'
-        exclude 'META-INF/ASL2.0'
-        exclude 'META-INF/INDEX.LIST'
-    }
-}
-
-buildscript {
-    repositories {
-        google()  // 必须添加 Google Maven 仓库
-        mavenCentral()  // 必须添加 Maven Central 仓库
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.2'  // Android Gradle 插件
-    }
-}
-
-allprojects {
-    repositories {
-        google()  // 必须添加 Google Maven 仓库
-        mavenCentral()  // 必须添加 Maven Central 仓库
     }
 }
 
