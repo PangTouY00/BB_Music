@@ -1,17 +1,17 @@
 // settings.gradle
 pluginManagement {
     repositories {
-        google()  // 必须添加 Google Maven 仓库
-        mavenCentral()  // 必须添加 Maven Central 仓库
-        gradlePluginPortal()  // Gradle 插件仓库
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)  // 强制使用 settings 仓库
     repositories {
-        google()  // 必须添加 Google Maven 仓库
-        mavenCentral()  // 必须添加 Maven Central 仓库
+        google()
+        mavenCentral()
     }
 }
-rootProject.name = "BB_Music"  // 项目名称
-include ':app'  // 包含的模块（通常是 app 模块）
+rootProject.name = "BB_Music"
+include ':app'
