@@ -3,7 +3,7 @@ name: Android Build
 on:
   workflow_dispatch:
 
-jjobs:
+jobs:
   build:
     runs-on: ubuntu-latest
 
