@@ -5,6 +5,19 @@ plugins {
 
 android {
     compileSdkVersion 33
+    // 添加以下配置
+    packagingOptions {
+        exclude 'META-INF/native-image/**'  // 排除所有 native-image 目录下的文件
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/INDEX.LIST'
+    }
     namespace 'com.example.lyricsplayer'  // 添加这一行，替换为你的应用包名
     defaultConfig {
         applicationId "com.example.lyricsplayer"
