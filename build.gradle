@@ -1,0 +1,17 @@
+// build.gradle (Project: BB_Music)
+buildscript {
+    repositories {
+        google()  // 必须添加 Google Maven 仓库
+        mavenCentral()  // 必须添加 Maven Central 仓库
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.2'  // Android Gradle 插件
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // 必须添加 Google Maven 仓库
+        mavenCentral()  // 必须添加 Maven Central 仓库
+    }
+}
