@@ -1,1 +1,13 @@
-<color name="ic_music_background">#FF4CAF50</color>  <!-- 绿色背景 -->
+<resources>
+    <!-- 紫色主题颜色 -->
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 其他颜色（可选） -->
+    <color name="black">#FF000000</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>
