@@ -6,6 +6,9 @@ plugins {
 android {
     compileSdkVersion 33
     // 添加以下配置
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
     packagingOptions {
         exclude 'META-INF/native-image/**'  // 排除所有 native-image 目录下的文件
         exclude 'META-INF/DEPENDENCIES'
