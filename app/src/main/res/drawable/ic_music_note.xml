@@ -5,13 +5,13 @@
     android:viewportWidth="24"
     android:viewportHeight="24">
 
-    <!-- 音乐符号主体 -->
+    <!-- Main music note -->
     <path
-        android:fillColor="#FF2196F3"  <!-- 蓝色 -->
+        android:fillColor="#FF2196F3"
         android:pathData="M12,3v10.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55 -2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4V7h4V3H12z" />
 
-    <!-- 高光装饰 -->
+    <!-- Highlight effect -->
     <path
-        android:fillColor="#FFFFFFFF"  <!-- 白色高光 -->
+        android:fillColor="#FFFFFFFF"
         android:pathData="M14,3h4v4h-4z" />
 </vector>
