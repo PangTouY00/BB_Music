@@ -18,14 +18,14 @@ jobs:
           distribution: 'temurin'
 
       - name: Install Android SDK
-        uses: android-actions/setup-android@v2  # 关键步骤：安装 Android SDK
+        uses: android-actions/setup-android@v2
         with:
-          android-sdk-platform: 33  # 指定 Android SDK 版本
-          build-tools-version: 33.0.2  # 指定构建工具版本
+          android-sdk-platform: 33
+          build-tools-version: 33.0.2
 
       - name: Accept Android Licenses
         run: |
-          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses  # 修正路径
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
           $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
 
       - name: Grant execute permission for gradlew
